@@ -1,0 +1,259 @@
+
+
+.projects {
+  margin-top: 130px;
+  color: #fff;
+}
+
+.projects-head h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #b5b5b5;
+  font-size: 90px;
+  margin-left: 650px;
+}
+
+.project-circle {
+  width: 110px;
+  height: 110px;
+  border: 5px #f3b815 solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.project-list img {
+  width: 750px;
+  height: 380px;
+  margin-left: 25px;
+  margin-top: -75px;
+  border-radius: 27px;
+}
+
+.comments-text {
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  width: 600px;
+  height: 90px;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 27px;
+}
+
+.comments-text2 {
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  width: 500px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 1px;
+  border-radius: 27px;
+}
+
+.comments-text3 {
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  width: 500px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 1px;
+  border-radius: 27px;
+}
+
+.user-comment {
+  width: 580px;
+  height: 30px;
+  background: #e4e4e4;
+  padding: 7px;
+  margin-top: -6px;
+  border-radius: 12px;
+}
+
+.user-comment2 {
+  width: 480px;
+  height: 35px;
+  background: #e4e4e4;
+  padding: 7px;
+  margin-top: -13px;
+  border-radius: 12px;
+}
+
+.user-comment3 {
+  width: 480px;
+  height: 35px;
+  background: #e4e4e4;
+  padding: 7px;
+  margin-top: -13px;
+  border-radius: 12px;
+}
+
+.x {
+  font-weight: 900px;
+  padding-bottom: 20px;
+}
+
+.x2 {
+  font-weight: 900px;
+  padding-bottom: 10px;
+}
+
+.x3 {
+  font-weight: 900px;
+  padding-bottom: 10px;
+}
+
+.project-box {
+  width: 800px;
+  background-color: #1a1a1a;
+  border-radius: 45px 0 0 45px;
+  padding: 15px;
+  height: 700px;
+  margin-top: 150px;
+  border: solid 4px #f0bb2b;
+  margin-left: 100px;
+}
+
+.project-circle-1 {
+  width: 60px;
+  height: 60px;
+  border: 5px #f3b815 solid;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #2d2d2d;
+}
+
+.project-circle-1 p {
+  font-size: 40px;
+  margin-left: 19px;
+  margin-top: 3px;
+  color: #fff;
+}
+
+.project-name1 {
+  margin-left: 80px;
+  margin-top: -52px;
+  margin-bottom: 100px;
+  font-size: 33px;
+  color: #ffffff;
+}
+
+.comments {
+  margin-left: 30px;
+  font-size: 50px;
+  margin-top: 3px;
+}
+
+.comments2 {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.comments3 {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.projects-all-content {
+  display: flex;
+  margin-top: -100px;
+}
+
+.project-circle {
+  width: 60px;
+  height: 60px;
+  border: 5px #f3b815 solid;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #2d2d2d;
+}
+
+.project-circle .circle-num {
+  font-size: 40px;
+  margin-left: 19px;
+  margin-top: 3px;
+  color: #fff;
+}
+
+.project-circle .circle-num3 {
+  font-size: 40px;
+  margin-left: 19px;
+  margin-top: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-name2 {
+  margin-left: 80px;
+  margin-top: -70px;
+  margin-bottom: 100px;
+  font-size: 33px;
+  color: #ffffff;
+}
+
+.project-name3 {
+  margin-left: 80px;
+  margin-top: -70px;
+  margin-bottom: 100px;
+  font-size: 33px;
+  color: #ffffff;
+}
+
+.project-box2 {
+  width: 600px;
+  background-color: #1a1a1a;
+  border-radius: 0 45px 45px 0;
+  padding: 15px;
+  height: 500px;
+  margin-top: 150px;
+  border: solid 4px #f0bb2b;
+  margin-left: 10px;
+}
+
+.project-box2 img {
+  width: 540px;
+  height: 280px;
+  margin-left: 25px;
+  margin-top: -70px;
+  border-radius: 27px;
+}
+
+.project-box3 {
+  width: 600px;
+  background-color: #1a1a1a;
+  border-radius: 0 45px 45px 0;
+  padding: 15px;
+  height: 500px;
+  margin-top: 10px;
+  border: solid 4px #f0bb2b;
+  margin-left: 10px;
+}
+
+.project-box3 img {
+  width: 540px;
+  height: 280px;
+  margin-left: 25px;
+  margin-top: -70px;
+  border-radius: 27px;
+}
+
+.hello {
+  font-size: 110px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 250px;
+  font-weight: 600;
+  margin-top: -230px;
+}
+
+.emoji1 {
+  margin-top: -490px;
+  font-size: 120px;
+  transform: rotate(-10deg);
+}
+
+.emoji2 {
+  margin-top: -790px;
+  font-size: 120px;
+  transform: rotate(10deg);
+  margin-left: 1500px;
+}

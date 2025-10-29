@@ -1,0 +1,461 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* Har sahifa kirganda sekin paydo bo'lish */
+body {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body {
+  background: #1a1a1a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/* Default (desktop) */
+
+
+.auth-btn-box {
+  margin: 20px;
+}
+.open-signup-btn {
+  background: #f0bb2b;
+  border: none;
+  
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.open-signup-btn:hover {
+  background: #e0a91f;
+}
+
+/* 🔲 Overlay */
+.auth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 📦 Popup */
+.auth-popup {
+  background: #2d2d2d;
+  color: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  width: 340px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  animation: authFadeIn 0.3s ease;
+  position: relative;
+}
+.auth-title {
+  text-align: center;
+  color: #f0bb2b;
+  margin-bottom: 15px;
+}
+.auth-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* 📋 Form style */
+.auth-form input {
+  width: 320px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+.auth-form input:focus {
+  border-color: #f0bb2b;
+  box-shadow: 0 0 5px rgba(240, 187, 43, 0.7);
+}
+.auth-btn {
+  width: 100%;
+  background: #f0bb2b;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.auth-btn:hover {
+  background: #e0a91f;
+}
+
+/* 🎖 Achievement card */
+.achievements-box {
+  margin-top: 10px;
+}
+.achievement-card {
+  background: #2d2d2d;
+  color: #fff;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.achievement-card span {
+  margin-left: 10px;
+}
+.achievement-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* 🎬 Animations */
+@keyframes authFadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes authFadeOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+@keyframes slide {
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+    /* 10px tepaga */
+  }
+}
+
+
+.modal {
+  display: none; /* boshlang'ich yopiq */
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal-content {
+  background: #1a1a1a;
+  width: 420px;
+  height: 150px;
+  max-width: 92%;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: left;
+}
+.close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999999;
+}
+.close:hover {
+  transition: 0.3s;
+  color: #434343;
+}
+.modal h2 {
+  margin: 0 0 19px 0;
+  font-size: 30px;
+}
+.modal p {
+  margin: 8px 0;
+}
+.modal a {
+  color: #0196ec;
+}
+
+.achievement-card {
+  position: fixed;
+  top: 30px;
+  left: -400px;
+  /* dastlab ekranda ko‘rinmaydi */
+  background: #f3b815;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: left 0.6s ease;
+  z-index: 9999;
+}
+
+/* Aktiv bo‘lganda chiqadi */
+.achievement-card.active {
+  left: 30px;
+}
+
+/* Yopilish effekt */
+.achievement-card.hide {
+  left: -400px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup {
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(8, 8, 8, 0.5);
+  transform: scale(0.8);
+  transition: transform 0.4s ease;
+}
+
+.overlay.active .popup {
+  transform: scale(1);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.skill {
+  margin: 15px 0;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #161616;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f0bb2b, #f3b815);
+  transition: width 1.5s ease;
+}
+
+.btn_skills {
+  margin: 20px;
+  padding: 10px 20px;
+  background: #1a1a1a;
+  color: white;
+  border: 2px solid #f3b815;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.btn_skills:hover {
+  transform: rotate(10deg);
+  transition: 0.5s;
+  background: #f0bb2b;
+  border: 2px solid #1a1a1a;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  z-index: 999;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(50px);
+  /* pastdan yashirinib turadi */
+  pointer-events: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+  /* sekin chiqish */
+}
+
+#backToTop.show {
+  opacity: 1;
+  transform: translateY(0);
+  /* tepaga chiqadi */
+  pointer-events: auto;
+}
+
+.langs {
+  margin-left: 20px;
+  margin-top: 24px;
+}
+
+.lang {
+  width: 70px;
+  height: 30px;
+  border: 2px solid #f3b815;
+  border-radius: 10px;
+  background: #1a1a1a;
+  padding: 3px;
+  color: #fff;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.lang:hover {
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(to right, #f0bb2b, #f3b815,#e0a91f);
+  width: 0%;
+  z-index: 9999;
+}
+
+/* CSS */
+#preloader {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+#preloader::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-top: 5px solid #ffcc00;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#preloader .hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+#money {
+  color: #00ab00c6;
+  font-size: 120px;
+  transform: rotate(-50deg);
+  margin-left: -150px;
+}

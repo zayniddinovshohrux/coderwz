@@ -1,0 +1,56 @@
+
+.about-btn1 {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #f3b815;
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.about-btn1:hover {
+  transform: rotate(10deg);
+  transition: 0.5s;
+  background: #000;
+  border: solid 1px #fff;
+}
+
+.about h1 {
+  margin-top: 170px;
+  color: #b5b5b5;
+  margin-left: 700px;
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.about-text {
+  width: 700px;
+  font-size: 25px;
+  color: white;
+  margin-left: 840px;
+  margin-top: 100px;
+}
+
+.about-text-box:hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.about-text-box {
+  margin-left: 20px;
+  margin-top: 100px;
+  transform: translateY(-10px);
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-logo img {
+  width: 350px;
+  margin-bottom: -530px;
+  margin-left: 230px;
+  animation: bounce 2s ease-in-out infinite;
+}

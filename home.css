@@ -1,0 +1,150 @@
+
+.home {
+  z-index: 1;
+}
+
+.home h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 200px;
+  padding-left: 175px;
+  z-index: 2;
+  color: #aaaaaa;
+  position: absolute;
+  text-shadow: 4px 3px 0 #202020c0;
+  transform: translateX(-100%);
+  animation: slide 1.7s ease-out forwards;
+}
+
+.logo {
+  position: relative;
+}
+
+.home img {
+  border: none;
+  border-radius: 50%;
+  width: 370px;
+  box-shadow: 0 5px 12px #684510b7;
+  margin-left: 620px;
+  z-index: 0;
+  margin-top: 80px;
+  animation: bounce 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+
+
+.text-right {
+  color: #fff;
+  width: 320px;
+  font-size: 18px;
+  position: absolute;
+  left: 190px;
+  top: 500px;
+  transform: translateY(-10px);
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-left {
+  color: #f3b815;
+  width: 320px;
+  font-size: 18px;
+  margin-left: 1100px;
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+  margin-top: -222px;
+}
+
+.text-left:hover {
+  transform: scale(1.1);
+  font-size: 21px;
+  color: #f0bb2b;
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-right:hover {
+  transform: scale(1.1);
+  font-size: 21px;
+  color: #ffffff;
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-center {
+  width: 208px;
+  font-size: 30px;
+  margin-left: 700px;
+  margin-top: 210px;
+  display: flex;
+  gap: 5px;
+  box-shadow: 0px 2px 7px #2d2d2d;
+  border-radius: 13px;
+  padding: 4px 7px 4px 7px;
+  background: #14141421;
+  z-index: 0;
+}
+
+.icon1 a {
+  color: #ebebeb;
+  transition: color 0.5s ease;
+}
+
+.icon2 a {
+  color: #f3b815;
+  transition: color 0.5s ease;
+}
+
+.icon3 a {
+  color: #ebebeb;
+  transition: color 0.5s ease;
+}
+
+.icon4 a {
+  color: #f3b815;
+  transition: color 0.5s ease;
+}
+
+.icon5 a {
+  color: #ebebeb;
+  transition: color 0.5s ease;
+}
+
+.icon1 a:hover {
+  color: #ee0e0e;
+  transition: 0.3s;
+  transform: scale(6);
+}
+
+.icon2 a:hover {
+  color: #db1ec2;
+  transition: 0.3s;
+  transform: scale(1.6);
+}
+
+.icon3 a:hover {
+  color: #00a2ff;
+  transition: 0.3s;
+  transform: scale(1.6);
+}
+
+.icon4 a:hover {
+  color: #0059ff;
+  transition: 0.3s;
+  transform: scale(1.6);
+}
+
+.icon5 a:hover {
+  color: #2f2f2f;
+  transition: 0.3s;
+  transform: scale(1.6);
+}
+
+.home-btn button {
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
