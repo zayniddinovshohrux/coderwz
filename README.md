@@ -1,2 +1,2 @@
-# coderwz
+# CoderWZ
 Zayniddinov Shohrux | Developer | Portfolio
